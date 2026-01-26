@@ -7,7 +7,7 @@ const App = () => {
     <div data-theme="retro"  className="font-['Kode Mono'] width-100%">
 
       <div className="h-14 bg-base-300/35 border-b-[1px] border-gray-400 z-10 sticky backdrop-blur-[7px] top-0 w-full flex items-center justify-between">
-        <h1 className=" ml-4 text-3xl max-sm:text-xl font-bold text-center">Mood Calender</h1>
+        <h1 className=" ml-4 text-3xl max-sm:text-xl font-bold text-center">Mood Metric</h1>
       </div>
 
 
