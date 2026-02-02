@@ -68,7 +68,7 @@ const Day = ({ name, day, items }) => {
                     </div> */}
                     <div className="flex flex-row">
                     {items.map((item) => (
-                        <div className="flex max-sm:flex-wrap flex-row m-0 justify-between">
+                        <div className="flex max-:flex-wrap  flex-row m-0 justify-between">
                             <button
                                 key={item.id}
                                 onClick={() => pickColor(item.color)
@@ -85,12 +85,12 @@ const Day = ({ name, day, items }) => {
                     </div>
 
                     <div>
-                        <div className="flex flex-col max-sm:m-1 m-4 mb-0">
+                        <div className="flex flex-col  max-sm:m-1 m-4 mb-0">
                             <textarea
                                 value={noteText}
                                 onChange={(e) => setNoteText(e.target.value)}
                                 placeholder="How was ur day?"
-                                className="border-2 border-gray-600 bg-base-100 max-sm:h-32 h-24 w-fill">
+                                className="border-2 border-gray-600 bg-base-100 max-sm:h-48 h-64 w-fill">
                             </textarea>
 
                             <button
