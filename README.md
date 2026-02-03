@@ -1,4 +1,4 @@
-# Mood Metric
+# Daydex
 ### A minimalist, visual mood-tracking application designed to help users document their emotional journey over a full year.
  With the help of **Mood metric** you can assign custom colors on the calender depending upon your mood.
  And also you can add notes for that particulr day.
@@ -10,11 +10,11 @@
  - Developmet logs
 
 ### 🛠️ Technical Stack
--   **Frontend**: React.js
+  -   **Frontend**: React.js
   -   **Styling**: Tailwind CSS & DaisyUI
   -   **Routing**: React Router
-    -   **Icons**: Lucide-React
-    -   **Fonts**: Google Fonts (Kode Mono, JetBrains Mono, etc.)
+  -   **Icons**: Lucide-React
+  -   **Fonts**: Google Fonts (Kode Mono, JetBrains Mono, etc.)
 
 .
 
