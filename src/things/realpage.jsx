@@ -1,14 +1,21 @@
 import React from 'react'
-
 import { Link } from "react-router"
 import { useState, useEffect } from 'react'
 import Month from './month.jsx'
 import BlogPage from './blog.jsx'
 import MoodCard from './moodCard.jsx'
 import useLocalStorage from '../hooks/useLocalStorage.js'
+import InfoPage from './infopage.jsx'
 
 
 const RealPage = () => {
+
+
+
+
+
+
+
 
 
 const [items, setItems] = useLocalStorage('mooditems', [
@@ -57,8 +64,12 @@ const [items, setItems] = useLocalStorage('mooditems', [
 
         {/* /////////////////////  12 month cards /////////////////// */}
         <div className="md:ml-14 h-full">
+
+          <InfoPage />
+
           <Month items={items} aqua={aqua} />
         </div>
+
       </div>
 
 

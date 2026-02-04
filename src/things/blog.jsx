@@ -14,6 +14,29 @@ const BlogPage = () => {
       <p>Documenting the journey in making this project</p>
       <div className="h-screen">
 
+
+        <div className="p-2 mt-10 border-l-4 border-base-300">
+          <p className="text-xl mb-4">2/2/2026 and 3/2/2026</p>
+          <div className="bg-base-200 border border-base-300 p-4 space-y-2">
+            <p>•Color edits now change for colored days too</p>
+            <p>•  changed local storage logic and added percentages for moods</p>
+          </div>
+        </div>
+
+
+
+        <div className="p-2 mt-10 border-l-4 border-base-300">
+          <p className="text-xl mb-4">1/2/2026</p>
+          <div className="bg-base-200 border border-base-300 p-4 space-y-2">
+            <p>• Added dark theme</p>
+            <p>• added colors logic to whole site </p>
+            <p>• Updated readme and blog</p>
+          </div>
+        </div>
+
+
+
+
         <div className="p-2 mt-10 border-l-4 border-base-300">
           <p className="text-xl mb-4">31/1/2026</p>
           <div className="bg-base-200 border border-base-300 p-4 space-y-2">

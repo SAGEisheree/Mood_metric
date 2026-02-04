@@ -30,6 +30,8 @@ const Day = ({ name, day, items }) => {
                 {day}
             </button>
 
+            {/* //////// popup ////////////////////////////////////////////////////////////////////////////////// */}
+
             {isOpen && (
                 <dialog
                     ref={modalRef}
@@ -38,17 +40,23 @@ const Day = ({ name, day, items }) => {
                     className="modal"
                 >
                     <div className="modal-box h-auto pt-4 pb-0 flex md:w-xl flex-col justify-between">
+                        <div className="mb-3">{name}  {day}</div>
                         <div className="flex flex-row flex-wrap justify-center">
-                            {items.map((item) => (
-                                <div key={item.id} className="flex max-:flex-wrap flex-row m-0 justify-between">
+                            {items.map((item) => {
+
+                                const showBorder = selectedMoodID === item.id;
+                                return(
+                                <div key={`${name}-${day}-${item.id}`} className="flex max-:flex-wrap flex-row m-0 justify-between">
                                     <button
-                                        onClick={() => setSelectedMoodID(item.id)}
-                                        className={`btn btn-ghost w-24 ${item.color}`}
+                                        onClick={() => {
+                                            setSelectedMoodID(item.id)
+                                        }}
+                                        className={`btn btn-ghost w-24 ${showBorder ? 'border-2 border-black scale-110' : 'border-0'} ${item.color}`}
                                     >
                                         {item.name}
                                     </button>
                                 </div>
-                            ))}
+                            );})}
                             <button
                                 onClick={() => setSelectedMoodID(null)}
                                 className='btn btn-ghost bg-base-200'
