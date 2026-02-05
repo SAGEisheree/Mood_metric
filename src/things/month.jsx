@@ -9,7 +9,7 @@ const Month = ({items,aqua}) => {
     return (
         <div className="flex flex-wrap justify-evenly [contain:layout_paint]">
             {names.map((name) => (
-                <div key={name} className={`w-full xl:w-[280px] xl:h-full h-full pb-4 shadow-md m-4 pt-[4px]  md:h-80 border-t-4 lg:w-80 ${aqua ? 'border-gray-300' : 'border-gray-500'}`}>
+                <div key={name} className={`w-full xl:w-[280px] xl:h-full h-full pb-4 shadow-md m-4 pt-[4px] bg-base-200 md:h-80 border-t-4 lg:w-80 ${aqua ? 'border-gray-300' : 'border-gray-500'}`}>
                     <div className="text-center font-medium text-m">{name}</div>
                     <div className="grid grid-cols-7 gap-0  mt-2">
                         {days.map((day) => (

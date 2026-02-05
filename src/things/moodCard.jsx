@@ -29,7 +29,7 @@ const MoodCard = ({ items, setItems, aqua }) => {
   return (
 
     <div className=" ">
-      <div className={`h-fit md:w-64 border-t-4 ${aqua ? 'border-gray-300' : 'border-gray-500'} m-4 shadow-md`} >
+      <div className={`h-fit md:w-64 border-t-4 ${aqua ? 'border-gray-300' : 'border-gray-500'} m-4 bg-base-200 shadow-md`} >
         <div className="flex flex-row justify-between pl-4 pr-4">
           <h2 className="text-center text-2xl mt-2 ">Moods</h2>
         </div>
