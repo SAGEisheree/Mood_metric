@@ -5,12 +5,14 @@ import Month from './month.jsx'
 import BlogPage from './blog.jsx'
 import MoodCard from './moodCard.jsx'
 import useLocalStorage from '../hooks/useLocalStorage.js'
+import useCloudStorage from '../hooks/useCloudStorage'
+
 import InfoPage from './infopage.jsx'
 import logo from '../assets/logo.svg';
 import Week from './week.jsx'
 
 const RealPage = () => {
-  const [items, setItems] = useLocalStorage('mooditems', [
+  const [items, setItems] = useCloudStorage('mooditems', [
     { id: 1, name: "SuperGood", color: "bg-emerald-500", percent: 0 },
     { id: 2, name: "Good", color: "bg-lime-500", percent: 0 },
     { id: 3, name: "Not Bad", color: "bg-orange-500", percent: 0 },
@@ -18,14 +20,14 @@ const RealPage = () => {
   ]);
 
 
-  const [totalMoods, setTotalMoods] = useLocalStorage('totalcount', 0)
+  const [totalMoods, setTotalMoods] = useCloudStorage('totalcount', 0)
   const updateTotal = (amount) => {
     setTotalMoods(prev => prev + amount);
   };
 
 
 
-  const [aqua, setAqua] = useLocalStorage('aquaState', false);
+  const [aqua, setAqua] = useCloudStorage('aquaState', false);
 
   ///////////   navbar /////////////////////////////////////////
   return (
