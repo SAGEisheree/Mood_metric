@@ -71,15 +71,16 @@ const RealPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-row max-md:flex-col ">
+          <div className="flex flex-row justify-around max-md:flex-col ">
 
             <div className=" h-fit " >
               <MoodCard items={items} setItems={setItems} aqua={aqua} />
             </div>
-
+          {/* // infopage added here */}
             <div className="text-left">
               <InfoPage />
             </div>
+
           </div>
 
           {/* <button className="">Total days selected = {totalMoods}</button> */}
